@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: #121321;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+    transform: translate(-250px, -150px);
+    background: linear-gradient(145deg, #9c27b0, pink,#f3f5f5);
+}
+
+
+section::after{
+    content: "";
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+    transform: translate(250px, 150px);
+    background: linear-gradient(330deg, #9c27b0, pink,#f3f5f5);
+}
+
+.container{
+    position: relative;
+    height: 337.5px;
+    width: 562.5px;
+    z-index: 100;
+    transition: 0.7s;
+    transform-style: preserve-3d;
+}
+
+.container .card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(70px);
+    backface-visibility:hidden ;
+
+}
+
+.container:hover{
+    transform: rotateY(180deg);
+    scale: 2;
+}
+
+.container .card .chip{
+    height: 13.4%;
+    width: 11.8%;
+    position: relative;
+    right: -82%;
+    bottom: 5%;
+    background-image: url(chip.png);
+    background-size: contain;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 16%;
+    width: 50%;
+    position: relative;
+    top:10%;
+    left: 7%;
+}
+
+.logo-pic{
+    height: 99.27%;
+    width: 30.6%;
+    background-image: url(logo.png);
+    background-size: contain;
+
+}
+
+.logo .text{
+    color: #ffffff;
+    font-size: 30px;
+    position: relative;
+    left: 6%;
+}
+
+.logo .text p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-details p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f5f5f5;
+}
+
+.card-details{
+    width: 100%;
+    position:absolute;
+    left: 7%;
+    top: 45%;
+}
+
+.card-details .card-number{
+    line-height: 35px;
+    font-size: 25px;
+}
+
+.card-details .card-number-text, .valid-thru{
+    font-size: 15px;
+}
+
+.card-details .card-name{
+    padding-top: 28px;
+    font-size: 30px;
+}
+
+.card-details .valid-thru, .expiry{
+    padding-left: 74%;
+    position: absolute;
+    top: 50%;
+}
+
+.expiry{
+    font-size: 28px;
+    top: 67%;
+}
+
+
+.back-face{
+    height: 337.5px;
+    color: #f3f5f5;
+    padding: 30px 25px 0 35px;
+    transform: rotateY(180deg);
+}
+
+h6{
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+.back-face .magnetic-strip{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    height: 60px;
+    width: 100%;
+    background-color: #000;
+}
+
+.signature{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 100px;
+    height: 55px;
+    width: 85%;
+    border-radius: 6px;
+    background-color: #fff;
+    background: repeating-linear-gradient(
+        #fff,
+        #fff 3px,
+        #efefef 0px,
+        #efefef 12px
+    );
+}
+
+.signature i{
+    width: 30px;
+    color: #000;
+    left: 7%;
+    position: relative;
+    border-radius: 0 4px 4px 0;
+    color: #000;
+    background-color: #fff;
+
+}
+
+h5{
+    position: relative;
+    font-size: 10px;
+    top: 10%;
+}
