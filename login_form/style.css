@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+}
+
+#video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    height:auto;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+}
+
+.outer-container{
+    height: 450px;
+    width: 400px;
+    background-color: #000000;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 3px rgb(1 238 255);;
+    animation: glow-animation 1.5s ease-in-out infinite;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.outer-container .login{
+    margin-top: 35px;
+    font-weight: bold;
+    height: 70px;
+    font-size: 50px;
+    color: #ffffff;
+    padding-top: 15px;
+}
+
+.details-box{
+    display: flex;
+    align-items: flex-end;
+    justify-content:center;
+    flex-wrap: wrap;
+    position: fixed;
+    height: 30%;
+    width: 100%;
+    color: #ffffff;
+    bottom: 10px;
+    position: relative;
+}
+
+.username{
+    height: 35%;
+    width: 90%;
+    color: #ffffff;
+    background-color: #000000;
+    border:none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+}
+
+.password{
+    height: 35%;
+    width: 90%;
+    color: #ffffff;
+    background-color: #000000;
+    border:none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+}
+
+.remembrance{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.remember{
+    margin-left: 5px;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.login-button{
+    height: 10%;
+    width: 90%;
+    border-radius: 25px;
+    color: #000000;
+    font-size: 20px;
+    background-color:white;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    box-shadow: none;
+    transition: all 0.2s ease-in;
+}
+
+.login-button:hover{
+    color: #000000;
+    background-color: rgb(1 238 255);
+    box-shadow: 0 0 5px 5px rgb(1,238,255,0.5);
+}
+
+#checkbox{
+    cursor:pointer;
+}
+
+.sign-up p{
+    font-size: 14px;
+    color: #ffffff;
+    position: relative;
+    bottom: 25px;
+}
+
+
+span{
+    color:rgb(1,238,255);
+    cursor: pointer;
+}
+
+span:hover{
+    text-decoration: underline;
+}
