@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+.outer-box{
+    display:inline;
+    justify-content: center;
+    height: 430px;
+    width: 350px;
+    background-color: #ffffff;
+    box-shadow: 3px 2px 10px black;
+    border-radius: 20px;
+}
+
+.top-box{
+    height: 34%;
+    width: 100%;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    background-color: #4070f4;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.picture{
+    height: 100%;
+    width: 100%;
+    border-radius:50%;
+    background-image:url(download.jpeg);
+}
+
+.image{
+    padding: 4px;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-size: contain;
+    margin-top: 70px;
+    background-color: white;
+    border: 3.5px solid #4070f4;
+}
+
+.bottom-box{
+    background-color: #ffffff;
+}
+
+.text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34px;
+    padding: 10px;
+    line-height: 23px;
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.subscribe, .message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    height: 35px;
+    width: 120px;
+    margin: 5px;
+    background-color: #4070f4;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.subscribe:hover, .message:hover{
+    width: 170px;
+    font-size: 18px;
+    background-color: black;
+}
+
+
+.links {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+
+.box1, .box2, .box3, .box4{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all 120ms linear;
+}
+
+.box1{
+    background: linear-gradient(45deg,rgb(254,218,117), rgb(250,126,30),rgb(214,41,118),rgb(150,47,191),rgb(79,91,213));
+    font-size: large;
+}
+
+.box2{
+    font-size: large;
+    background-color: rgb(24,119,242);
+    
+}
+
+.box3{
+    background-color: rgb(255,0,0);
+}
+
+.box4{
+    color: #ffffff;
+    background-color: rgb(29, 161, 242);
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover{
+    scale: 1.1;
+    cursor: pointer;
+    background-color: black;
+}
+
+.box1:hover{
+    background-image: url(logo-black.png);
+}
+
+
+.bottom-numbers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    padding: 0 20px 0  20px;
+    color: #333;
+    
+}
+
+.heart, .comment,.share{
+    padding: 0 20px;
+    border-right: 2px solid #c5c5c5;
+    transition: all 120ms linear;
+}
+
+.bottom-numbers .share{
+    border-right: none;
+}
+
+.share:hover, .comment:hover, .heart:hover{
+    scale: 1.2;
+    color: red;
+    cursor: pointer;
+}
+
+#background-video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -10; /* Place the video behind other elements */
+}
